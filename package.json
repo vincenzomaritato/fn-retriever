@@ -1,15 +1,16 @@
 {
   "name": "fn-retriever",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight package to retrieve the name of a named function in JavaScript.",
   "main": "index.js",
   "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "test": "ava"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vincenzomaritato/fn-retriever.git"
   },
   "keywords": [
     "function",
@@ -20,12 +21,24 @@
     "package",
     "retrieval"
   ],
-  "author": "Vincenzo Maritato",
-  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincenzomaritato/fn-retriever.git"
+  },
   "bugs": {
     "url": "https://github.com/vincenzomaritato/fn-retriever/issues"
   },
   "homepage": "https://github.com/vincenzomaritato/fn-retriever#readme",
+  "funding": "https://github.com/sponsors/vincenzomaritato",
+  "author": {
+    "name": "Vincenzo Maritato",
+    "email": "vincenzomaritato2005@gmail.com",
+    "url": "https://spacehubnetwork.com"
+  },
+  "license": "MIT",
   "devDependencies": {
     "ava": "^6.1.3"
   }
